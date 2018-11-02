@@ -5,11 +5,12 @@
             <userInfo/>
         </attribute>
         <attribute name="city" attributeType="String" syncable="YES"/>
-        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
         <userInfo/>
     </entity>
     <elements>
-        <element name="Site" positionX="261" positionY="189" width="128" height="105"/>
+        <element name="Site" positionX="261" positionY="189" width="128" height="120"/>
     </elements>
 </model>
