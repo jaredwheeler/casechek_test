@@ -17,6 +17,9 @@
 		0AE81CF0218B955300780587 /* CasechekTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE81CEF218B955300780587 /* CasechekTestTests.swift */; };
 		0AE81CFB218B9B9F00780587 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE81CFA218B9B9F00780587 /* DataModel.swift */; };
 		0AE81CFC218B9B9F00780587 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE81CFA218B9B9F00780587 /* DataModel.swift */; };
+		0AE81D38218CB2EB00780587 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE81D37218CB2EB00780587 /* Formatter.swift */; };
+		0AE81D39218CB2EB00780587 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE81D37218CB2EB00780587 /* Formatter.swift */; };
+		0AE81D3A218CB6B900780587 /* CasechekTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AE81CD7218B954600780587 /* CasechekTest.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,7 @@
 		0AE81CEF218B955300780587 /* CasechekTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasechekTestTests.swift; sourceTree = "<group>"; };
 		0AE81CF1218B955300780587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AE81CFA218B9B9F00780587 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		0AE81D37218CB2EB00780587 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			children = (
 				0AE81CD7218B954600780587 /* CasechekTest.xcdatamodeld */,
 				0AE81CFA218B9B9F00780587 /* DataModel.swift */,
+				0AE81D37218CB2EB00780587 /* Formatter.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE81D38218CB2EB00780587 /* Formatter.swift in Sources */,
 				0AE81CFB218B9B9F00780587 /* DataModel.swift in Sources */,
 				0AE81CD9218B954600780587 /* CasechekTest.xcdatamodeld in Sources */,
 				0AE81CD6218B954600780587 /* AppDelegate.swift in Sources */,
@@ -227,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE81D3A218CB6B900780587 /* CasechekTest.xcdatamodeld in Sources */,
+				0AE81D39218CB2EB00780587 /* Formatter.swift in Sources */,
 				0AE81CF0218B955300780587 /* CasechekTestTests.swift in Sources */,
 				0AE81CFC218B9B9F00780587 /* DataModel.swift in Sources */,
 			);

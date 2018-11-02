@@ -36,7 +36,7 @@
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-y9-sOw">
                                 <rect key="frame" x="20" y="303.5" width="335" height="20.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -46,27 +46,55 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="Gls-Rp-GMt"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="HaM-G9-uvc">
+                                <rect key="frame" x="20" y="344" width="335" height="20.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="a5x-gk-P0k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1LL-YL-Qof">
+                                <rect key="frame" x="20" y="365" width="335" height="20.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="Qfm-In-xCx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="1LL-YL-Qof" secondAttribute="trailing" constant="20" id="4sT-g1-0CU"/>
+                            <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="HaM-G9-uvc" secondAttribute="trailing" constant="20" id="J24-tg-WR7"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="PMH-xf-yk4" secondAttribute="trailing" constant="20" id="Kg2-fC-CE8"/>
+                            <constraint firstItem="1LL-YL-Qof" firstAttribute="top" secondItem="HaM-G9-uvc" secondAttribute="bottom" constant="0.5" id="MeV-OL-nHo"/>
                             <constraint firstItem="0XM-y9-sOw" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="20" symbolic="YES" id="Tsc-yG-G1q"/>
+                            <constraint firstItem="1LL-YL-Qof" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="20" id="WzZ-HY-6Tj"/>
                             <constraint firstItem="PMH-xf-yk4" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="20" id="XSO-C7-yGL"/>
                             <constraint firstItem="0XM-y9-sOw" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="-20" id="jWN-iV-94e"/>
                             <constraint firstItem="PMH-xf-yk4" firstAttribute="top" secondItem="0XM-y9-sOw" secondAttribute="bottom" constant="-1" id="n4M-FY-lHq"/>
                             <constraint firstAttribute="trailing" secondItem="0XM-y9-sOw" secondAttribute="trailing" constant="20" symbolic="YES" id="tHV-ZD-HQj"/>
+                            <constraint firstItem="HaM-G9-uvc" firstAttribute="top" secondItem="PMH-xf-yk4" secondAttribute="bottom" constant="0.5" id="xSd-ls-ww3"/>
+                            <constraint firstItem="HaM-G9-uvc" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="20" id="yu9-XC-xj2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
                     <connections>
-                        <outlet property="dateLabel" destination="PMH-xf-yk4" id="Uof-aZ-oQH"/>
+                        <outlet property="addressLabel" destination="PMH-xf-yk4" id="OG4-Qs-dSU"/>
+                        <outlet property="dateLabel" destination="HaM-G9-uvc" id="UmU-7v-nmd"/>
                         <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
+                        <outlet property="statusLabel" destination="1LL-YL-Qof" id="pfJ-u3-rIu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
