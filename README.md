@@ -1,4 +1,3 @@
-###Jared Wheeler
 # Casechek code challenge
 
 ### Build/run requirements:
@@ -26,3 +25,5 @@ Upon first launch, a request is made against the API. That JSON data is parsed a
 The UI stack is a standard iOS component system (SplitView) consisting of a table view and a detail view.  This was chosen since it automatically adapts to the various screen sizes available in the iOS ecosystem.  
 
 The SplitView also has the benefit of compatibility with a standard iOS data-store-to-view pipeline called a FetchedResultsController.  It requires a fair amount of boilerplate code, (as you may have noticed) but it brings in a lot of automatic view binding behavior.  It's well-suited to a code challenge, but its strong opinion about view stack architecture makes it a tougher call in a real-world app.
+
+I've included a unit test as an example.  It exercises the ISO8601 date formatter I've set up to parse the inspection date string from JSON.  In it, individual strings are created for each field (year, month, day, etc.) in the final date string.  A date is created from a concatenation of those fields.  The fields in that created date are then tested for integer equality against the initial string date fields.  See CasechekTestTests.swift.
