@@ -77,12 +77,14 @@ class DataModel: NSObject {
                 if let siteName = site["aka_name"] as? String,
                     let siteAddress = site["address"] as? String,
                     let siteCity = site["city"] as? String,
-                    let siteDate = site["inspection_date"] as? String {
+                    let siteDate = site["inspection_date"] as? String,
+                    let siteResults = site["results"] as? String {
                         let siteMO = NSManagedObject(entity: entity, insertInto: moc) as! Site
                         siteMO.name = siteName
                         siteMO.address = siteAddress
                         siteMO.city = siteCity
-                        siteMO.date = siteDate
+                        siteMO.date = Formatter.dateFrom(IS08601String: siteDate)
+                        siteMO.status = siteResults
                         print(site)
                 }
             }
